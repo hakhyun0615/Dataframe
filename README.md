@@ -1,83 +1,58 @@
-# Pandas DataFrame Operations
+# DataFrame Operations
 This repository contains notes and examples on various DataFrame operations in Pandas, focusing on financial data analysis.
 
-## Creating DataFrames
+## Contents
+### Creating DataFrames
 Various ways to create DataFrames including from dictionaries, 2D lists, and lists of dictionaries.
-
-## Setting Index
+### Setting Index
 Use `.set_index(column_name)` to set a column as the index of the DataFrame.
-
-## Column Indexing
+### Column Indexing
 Access columns using `df['column_name']`. For multiple columns, use a list: `df[['col1', 'col2']]`.
-
-## Row Indexing
+### Row Indexing
 Use `.loc['index_name']` or `.iloc[row_number]` for row indexing. For multiple rows, use lists.
-
-## Accessing Specific Values
+### Accessing Specific Values
 Methods to access specific values in a DataFrame.
-
-## Selecting Ranges
+### Selecting Ranges
 Use `.loc[[row_names], [column_names]]` or `.iloc[[row_numbers], [column_numbers]]` to select ranges.
-
-## Conditional Filtering
+### Conditional Filtering
 Filter DataFrame based on conditions.
-
-## Adding Columns
+### Adding Columns
 Methods to add new columns to a DataFrame.
-
-## Adding Rows
+### Adding Rows
 Techniques for adding new rows to a DataFrame.
-
-## Deleting Columns/Rows
+### Deleting Columns/Rows
 Use `drop()` with `axis=1` for columns, `axis=0` for rows.
-
-## Changing Column Labels
+### Changing Column Labels
 Use `df.columns`, `df.index.name`, or `df.rename()` to change column labels.
-
-## Changing Data Types
+### Changing Data Types
 Use `.astype()` to change data types of columns.
-
-## String Operations on Columns
+### String Operations on Columns
 Perform string operations on DataFrame columns using `.str` accessor.
-
-## Querying Data
+### Querying Data
 Use `query()` method for filtering data based on complex conditions.
-
-## Filtering with regex
+### Filtering with regex
 Use `filter()` with `items` or `regex` for advanced filtering.
-
-## Sorting and Ranking
+### Sorting and Ranking
 Use `.sort_values()` for sorting and `.rank()` for ranking.
-
-## Index Operations
+### Index Operations
 Perform set operations on indexes: `.union()`, `.intersection()`, `.difference()`.
-
-## Grouping Data
+### Grouping Data
 Use `.groupby()`, `.get_group()`, and `.agg()` for grouping and aggregating data.
-
-## Concatenating DataFrames
+### Concatenating DataFrames
 Use `pd.concat()` to concatenate DataFrames.
-
-## Appending DataFrames
+### Appending DataFrames
 Use `.append()` to append DataFrames.
-
-## Merging DataFrames
+### Merging DataFrames
 Use `.merge()` to merge DataFrames based on column values.
-
-## Joining DataFrames
+### Joining DataFrames
 Use `.join()` to join DataFrames based on index.
-
-## Slicing
+### Slicing
 Various slicing techniques for DataFrames.
-
-## MultiIndex Columns
+### MultiIndex Columns
 Create MultiIndex columns using `pd.MultiIndex.from_product()`.
-
-## Stack and Unstack
+### Stack and Unstack
 Use `.stack()` and `.unstack()` for reshaping DataFrames.
-
-## Pivot Tables
+### Pivot Tables
 Create pivot tables using `pd.pivot()`.
-
-## Melting DataFrames
+### Melting DataFrames
 Use `.melt()` to reshape DataFrames from wide to long format.
